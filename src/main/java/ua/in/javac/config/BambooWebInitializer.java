@@ -19,4 +19,5 @@ public class BambooWebInitializer extends AbstractAnnotationConfigDispatcherServ
         return new String[]{"/"};
     }
 
+
 }

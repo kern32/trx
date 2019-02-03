@@ -8,7 +8,7 @@ import ua.in.javac.service.impl.MessageServiceProvider;
 
 
 @Configuration
-@ComponentScan(basePackages = {"ua.in.javac.rest"},
+@ComponentScan(basePackages = {"ua.in.javac"},
         excludeFilters = {
                 @Filter(type = FilterType.ANNOTATION, value = EnableWebMvc.class)
         })
@@ -23,7 +23,7 @@ public class RootConfig {
     @Bean
     @Profile("test")
     public MessageService testMessageService() {
-        return new MessageServiceProvider("Hello from test Profile");
+        return new MessageServiceProvider("Hello from testFetching Profile");
     }
 
 }

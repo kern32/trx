@@ -11,7 +11,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 @Configuration
 @EnableWebMvc
 @ComponentScan({"ua.in.javac.web"})
-@Import(RestConfig.class)
+@Import({DBConfig.class, RestConfig.class})
 public class WebConfig extends WebMvcConfigurerAdapter {
 
     @Bean

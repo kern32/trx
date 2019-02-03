@@ -1,6 +1,6 @@
 package ua.in.javac.web;
 
-import ua.in.javac.exceptions.UserNotFoundException;
+import ua.in.javac.exceptions.CredentialNotFoundException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @ControllerAdvice(basePackages = "ua.in.javac.web")
 public class WebAppExceptionHandler {
 
-    @ExceptionHandler(UserNotFoundException.class)
+    @ExceptionHandler(CredentialNotFoundException.class)
     @ResponseBody
-    public String userNotFound(UserNotFoundException e) {
+    public String userNotFound(CredentialNotFoundException e) {
         return e.getMessage();
     }
 }
