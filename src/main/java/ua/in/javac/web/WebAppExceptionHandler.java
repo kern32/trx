@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @ControllerAdvice(basePackages = "ua.in.javac.web")
 public class WebAppExceptionHandler {
-!!
+!!!
     @ExceptionHandler(CredentialNotFoundException.class)
     @ResponseBody
     public String userNotFound(CredentialNotFoundException e) {
