@@ -23,6 +23,6 @@ public class HibernateBookRepositoryTest {
     @Test
     public void defaultFetchModeHql() throws Exception {
         Assert.assertEquals("kernel32" == "kernel32", true);
-        System.out.println("kernel32");
+        System.out.println("kernel 1");
     }
 }
