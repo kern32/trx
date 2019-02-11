@@ -25,4 +25,5 @@ public class HibernateBookRepositoryTest {
         Assert.assertEquals("local" == "local", true);
         System.out.println("local");
     }
+
 }
