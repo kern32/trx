@@ -22,7 +22,7 @@ public class HibernateBookRepositoryTest {
 
     @Test
     public void defaultFetchModeHql() throws Exception {
-        Assert.assertEquals(5 == 4, true);
+        Assert.assertEquals(8 == 4, true);
     }
 
 }
