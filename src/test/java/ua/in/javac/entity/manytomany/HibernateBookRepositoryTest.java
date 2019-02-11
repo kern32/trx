@@ -24,5 +24,4 @@ public class HibernateBookRepositoryTest {
     public void defaultFetchModeHql() throws Exception {
         Assert.assertEquals(7 == 3, true);
     }
-
 }
