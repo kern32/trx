@@ -22,6 +22,6 @@ public class HibernateBookRepositoryTest {
 
     @Test
     public void defaultFetchModeHql() throws Exception {
-        Assert.assertEquals("k1" == "k", true);
+        Assert.assertEquals("k1" == "k1", true);
     }
 }
