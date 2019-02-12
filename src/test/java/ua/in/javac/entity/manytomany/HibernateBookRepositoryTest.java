@@ -23,6 +23,6 @@ public class HibernateBookRepositoryTest {
     @Test
     public void defaultFetchModeHql() throws Exception {
         Assert.assertEquals("k" == "k", true);
-        System.out.println(2);
+        System.out.println(3);
     }
 }
